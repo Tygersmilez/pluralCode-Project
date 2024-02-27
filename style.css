@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.container {
+  background-color: black;
+  box-shadow: 0px 0px 10px 5px #0000002c;
+  margin: 0 auto;
+  max-width: 35vw;
+  max-height: 80vh;
+  margin-top: 7rem;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+}
+
+.brief {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  background-color: white;
+  padding: 1rem;
+  max-width: 35vw;
+  max-height: 40vh;
+  font-size: small;
+  margin: 0 auto;
+  line-height: 16px;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
+}
+
+.second-container {
+  display: flex;
+  flex: 1 0 50%;
+  max-width: 35vw;
+  max-height: 40vh;
+  font-size: small;
+  margin: 0 auto;
+}
+
+.payment {
+  background-color: #31a19c;
+  color: white;
+  flex-basis: 50%;
+  padding: 1rem;
+  border-bottom-left-radius: 3%;
+}
+
+.info {
+  background-color: #44b5af;
+  flex-basis: 50%;
+  padding: 1rem;
+  color: white;
+  font-size: small;
+  border-bottom-right-radius: 3%;
+}
+
+h3 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.9rem;
+  color: hsl(179, 62%, 43%);
+}
+
+h4 {
+  padding-bottom: 0.85rem;
+}
+
+.day {
+  padding-bottom: 0.5rem;
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+}
+
+.gain {
+  padding-bottom: 0.35rem;
+  color: gray;
+}
+
+.perfect {
+  color: gray;
+  padding-bottom: 0.3rem;
+}
+
+.price {
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.span-one {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.span-two {
+  font-size: small;
+  font-weight: smaller;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.642);
+}
+
+.access {
+  padding-bottom: 2rem;
+}
+
+button {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+@media screen and (max-width: 650px) {
+  body .container .second-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .payment {
+    border-bottom-left-radius: 0%;
+  }
+
+  .info {
+    border-bottom-left-radius: 3%;
+    padding-bottom: 1rem;
+  }
+}
